@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.log
+.env
+
+# Jupyter checkpoints only (KEEP notebooks as portfolio assets!)
+.ipynb_checkpoints/
+
+# Data (never commit raw data)
+data/raw/*
+!data/raw/.gitkeep
+
+# Output (keep predictions, ignore large models)
+output/models/*.pkl
+!output/models/.gitkeep
+output/*.csv
+!output/predictions.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Allow tracking experiment notes and portfolio assets
+!experiments/*.md
+!assets/*.png
+!assets/*.pbix
