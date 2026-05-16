@@ -114,16 +114,41 @@ Customers segmented by churn probability × business value:
 
 ## 📈 Power BI Dashboard
 
-<!-- ![Dashboard Preview](./assets/dashboard_preview.png) -->
-*Screenshot placeholder: Replace with your actual `assets/dashboard_preview.png`*
+## 📈 Power BI Dashboard
 
-**Key Visualizations:**
-- Churn rate by demographic/behavioral segments
-- Risk tier distribution (pie + bar charts)
-- SHAP-based feature importance waterfall chart
-- Interactive customer risk heatmap (filter by age, tenure, spend)
-- `"Top 100 At-Risk Customers"` table for sales team export
+### Executive Summary (Page 1)
+![Executive Dashboard](./assets/dashboard_executive.png)
 
+**Key Metrics:**
+- **331 Total At-Risk Customers** (High + Medium Risk)
+- **65 High-Value Customers at Risk** requiring immediate action
+- **16.03% Average Churn Probability** across test set
+- **15.15% High Risk** | **1.18% Medium Risk** | **83.66% Low Risk**
+
+### Risk Segmentation (Page 2)
+![Risk Segmentation](./assets/dashboard_risk_segmentation.png)
+
+**Behavioral Insights:**
+- High Risk customers show **45.30 avg transactions** vs **69.39 for Low Risk**
+- High Risk customers have **2.68 months inactive** vs **2.26 for Low Risk**
+- Top churn drivers: `Total_Trans_Ct`, `Total_Trans_Amt`, `Total_Revolving_Bal`
+
+### Top 100 Priority List (Page 3)
+![Top 100 List](./assets/dashboard_top100.png)
+
+**Actionable Output:**
+- Prioritized list sorted by `priority_score` (Churn Probability × Customer Value)
+- Top customer: **$10,262 priority score** (100% churn probability, $10,291 value)
+- Ready for CRM integration and sales team outreach
+
+---
+
+**Interactive Features:**
+- ✅ Filter by risk tier, value tier, and behavioral metrics
+- ✅ Drill-down from executive summary to individual customers
+- ✅ Export top 100 at-risk list for sales team
+
+**Download:** [churn_dashboard.pbix](./assets/churn_dashboard.pbix)
 ---
 
 ## 🚀 How to Run
